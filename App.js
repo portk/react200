@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import AxiosPost from './R062_AxiosPost';
+import CallbackFunc from './R064_CallbackFunc';
 
 function App() {
   return (
     <div className="App">
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <AxiosPost/>
+      <CallbackFunc/>
     </div>
   );
 }
