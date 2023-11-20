@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import ShallowEqual from './R029_ShallowEqual';
+import FunctionComponent from './R030_FunctionComponent';
 
 function App() {
   return (
     <div className="App">
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <ShallowEqual/>
+      <FunctionComponent/>
     </div>
   );
 }
