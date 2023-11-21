@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import ReactonSubmit from './R072_ReactonSubmit';
+import ReactRef from './R073_ReactRef';
 
 function App() {
   return (
     <div className="App">
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <ReactonSubmit/>
+      <ReactRef/>
     </div>
   );
 }
