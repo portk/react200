@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Curring from './R074_ReactCurrying';
+import ReactHoc from './R075_ReactHoc';
 
 function App() {
   return (
     <div className="App">
       <h1>Start React 200!</h1>
       <p>CSS 적용하기</p>
-      <Curring/>
+      <ReactHoc name="react200"/>
     </div>
   );
 }
