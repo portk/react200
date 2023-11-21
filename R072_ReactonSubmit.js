@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 class R072_ReactonSubmit extends Component {
     Submit(e) {
-        var inputValue = document.getElementById("inputId").ariaValueMax;
+        var inputValue = document.getElementById("inputId").value;
         console.log("inputValue : "+inputValue);
         e.preventDefault();
     }
