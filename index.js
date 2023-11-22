@@ -3,18 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
 import {createStore} from 'redux';
+import {Provider} from 'react-redux';
 import reducers from "./components/reducers";
 
-// 78~80번의 실행결과는 80번에서 확인한다.
-// redux는 컨텍스트처럼 데이터를 필요한 컴포넌트에서만 요청해 사용할 수 있다.
-// 컨텍스트는 부모 컴포넌트에서 생성한 데이터에 모든 자식 컴포넌트에서 접근할 수 있다.
-// 리덕스는 컴포넌트 외부의 스토어라는 곳에서 관리하여 컴포넌트의 위치와 상관없이 스토어에 접근해 데이터를 사용하고 변경할 수 있다.
+// 83번 예제에서 확인
+// store 상속을 위해 Provider를 import해 사용한다.
+// app에게 상속을 했기 때문에 모든 컴포넌트에서 store를 사용할 수 있게 되었다.
 
 const store = createStore(reducers);
 
 const listener = ()=> {
   ReactDOM.render(
-    <App store={store}/>,
+    <Provider store={store}>
+      <App store={store}/>
+    </Provider>,
     document.getElementById("root")  
   );
 };
