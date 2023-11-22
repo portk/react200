@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App';
 import {createStore} from 'redux';
-import reducers from "./reducers";
+import reducers from "./components/reducers";
 
 // 78~80번의 실행결과는 80번에서 확인한다.
 // redux는 컨텍스트처럼 데이터를 필요한 컴포넌트에서만 요청해 사용할 수 있다.
